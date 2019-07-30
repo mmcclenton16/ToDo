@@ -7,6 +7,7 @@ import todoData from './components/todoData'
 function App() {
   // todoItems is a new array being created from MAPPING the array in todoData. Make a taco, and use it to access the info you get back from MAPPING over todoDate. 
   // taco = todoData.map
+  // Feed the taco to TodoItem
   const todoItems = todoData.map(taco => <TodoItem key={taco.id} taco={taco} />)
   
   return (
