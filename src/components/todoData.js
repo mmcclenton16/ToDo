@@ -8,13 +8,13 @@ const todoData = [
     {
         id: 2,
         task: "Therapy",
-        completed: false
+        completed: true
     },
 
     {
         id: 3,
         task: "Zelda",
-        completed: false
+        completed: true
     }
 ]
 export default todoData
