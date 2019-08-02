@@ -4,7 +4,7 @@ import todoData from "./todoData";
 function TodoItem(props) {
     return (
         <div className="todo-item">
-            <input type="checkbox" checked={props.taco.completed} onChange={() => console.log('changed!')} />
+            <input type="checkbox" checked={props.taco.completed} onChange={() => props.onChange(props.taco.id)} />
             <p>{props.taco.task}</p>
         </div>
     )
