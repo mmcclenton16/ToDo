@@ -6,7 +6,7 @@ export default class NavBar extends Component {
         return (
             <div className='nav-bar'>
             <nav>
-                <h1>Hello!</h1>
+                <h1>My To-Do List</h1>
             </nav>
             </div>
         )

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TodoItem from './components/TodoItem';
-import todoData from './components/todoData'
+import todoData from './components/todoData';
+import NavBar from './components/Navbar';
 
 export default class App extends Component {
   constructor() {
@@ -32,14 +33,15 @@ export default class App extends Component {
     // todoItems is a new array being created from MAPPING the array in todoData. Make a taco, and use it to access the info you get back from MAPPING over todoDate. 
     const todoItems = todoData.map(taco =>
       <TodoItem
-        key={taco.id}
-        taco={taco}
-        handleChange={this.handleChange} />)
-    // taco = todoData.map
-
-    // Feed the taco to TodoItem
-    return (
-      <div className='to-do-list'>
+      key={taco.id}
+      taco={taco}
+      handleChange={this.handleChange} />)
+      // taco = todoData.map
+      
+      // Feed the taco to TodoItems
+      return (
+        <div className='to-do-list'>
+        <NavBar />
         {todoItems}
       </div>
     );
